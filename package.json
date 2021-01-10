@@ -36,6 +36,7 @@
   "types": "./dist/index.d.ts",
   "repository": "git@github.com:bukhalo/nestjs-telegraf.git",
   "scripts": {
+    "prepare": "npm run build",
     "build": "rm -rf dist && tsc -p tsconfig.json",
     "precommit": "lint-staged",
     "prepublish:npm": "npm run build",
